@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BottomWithHistory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FF"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:id="@+id/TopWithButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="#FFFF00"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/fieldNumbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:hint="@string/hintNumber"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonGetFact"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:onClick="toSecondPageExtra"
+            android:text="@string/button_1" />
+
+        <Button
+            android:id="@+id/buttonGetRandom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:onClick="toSecondPage"
+            android:text="@string/button_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/firstFactFromEnd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_text_style"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="Empty"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/secondFactFromEnd2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_text_style"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="Empty"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/thirdFactFromEnd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_text_style"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="Empty"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/fourthFactFromEnd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/view_text_style"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="Empty"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

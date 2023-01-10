@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NumbersAPI</string>
+    <string name="button_1">Get fact</string>
+    <string name="button_2">Get fact about random number</string>
+    <string name="hintNumber">Enter numbers</string>
+    <string name="buttonFrom2PageTo1">Go Back</string>
+    <string name="title_activity_basic">Basic</string>
+</resources>
